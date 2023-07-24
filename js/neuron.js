@@ -51,9 +51,9 @@ class Datum {
         let color = undefined
 
         if (this._classification == 0) {
-            color = "orange"
+            color = "red"
         } else {
-            color = "green"
+            color = "#6cb41e"
         }
         draw_point(this._x1, this._x2, color)
     }
@@ -149,7 +149,7 @@ buildNeuronButton.addEventListener('click', function () {
     prepare_canvas()
 
     neuron = new Neuron(w0, w1, w2/*, learningRate*/)
-    neuron.borderFunction.drawFunction("red")
+    neuron.borderFunction.drawFunction("#00943d")
 
     samples = parseData()
     samples.forEach(datum => {
