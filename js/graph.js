@@ -138,6 +138,15 @@ function prepare_canvas() {
         ctx.textAlign = 'start';
         ctx.fillText(y_axis_starting_point.number * i * y_axis_scalar + y_axis_starting_point.suffix, 8, -y_grid_size * i + 3);
     }
+
+    // Labeling the axises
+    ctx.font = '16px Arial';
+    ctx.textAlign = 'start';
+    ctx.fillText("Länge Kelchblatt in cm", 450, 35);
+    
+    ctx.font = '16px Arial';
+    ctx.textAlign = 'start';
+    ctx.fillText("Länge Kronblatt in cm", 5, -460);
 }
 
 function draw_x_line(x_min, x_max, y) {
